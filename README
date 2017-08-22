@@ -1,0 +1,4 @@
+Since the commits from the old site contained large images that made downloading
+the repo slow, they are not referenced as parents by the commits for the new
+site. In other words, if you're looking for the '16-'17 COGS site, look
+elsewhere.

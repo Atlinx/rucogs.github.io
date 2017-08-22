@@ -1,0 +1,173 @@
+/*
+ * Page
+ */
+
+body {
+  color: #5a5a5a;
+}
+
+/*
+ * Header
+ */
+
+#headerWrapper {
+    display: table;
+    margin: 0 auto;
+}
+
+#headerWrapper>* {
+    display: table-cell;
+    vertical-align: right;
+}
+
+.header {
+    margin-left: 10px;
+}
+
+.header h1 {
+    font-weight: 700;
+}
+
+#social {
+    font-size: 25px;
+}
+
+@media(max-width:768px) {
+    #social {
+        display: none;
+    }
+}
+
+
+/*
+ * Carousel
+ */
+
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+#hookCarousel {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+@media (max-width: 1200px) {
+  #hookCarousel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #hookCarousel {
+    display: none;
+  }
+}
+
+/*
+ * Content
+ */
+
+.header {
+  text-align: center;
+  color: #000;
+}
+
+h2 {
+    color: #000;
+}
+
+/*
+ * Members
+ */
+
+#members .col-lg-4 {
+    text-align: center;
+}
+
+#members h2 {
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+#members h3 {
+    margin: 0px 0px 5px 0px;
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#members p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*
+ * Projects
+ */
+
+#projects .col-md-5 {
+    text-align: center;
+}
+
+#projects .col-md-7 {
+    padding: 20px 60px;
+}
+
+#projects .col-md-push-5 {
+    text-align: right;
+}
+
+#projects p {
+    text-indent: 10px;
+}
+
+/*
+ * Footer
+ */
+
+.footer {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: #999;
+}
+
+/*
+ * Background
+ */
+
+#bgGame {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+    z-index: -10;
+}
+
+#bgGame canvas {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}

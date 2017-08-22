@@ -103,6 +103,33 @@ h2 {
     color: #000;
 }
 
+.horizontal-divider {
+    position: absolute;
+    padding: 0px;
+    border-left: 1px solid #DDD;
+    top: 15px;
+    bottom: 15px;
+}
+
+.horizontal-divider-3-1 {
+    left: 33.333%;
+}
+
+.horizontal-divider-3-2 {
+    left: 66.666%;
+}
+
+@media(max-width:1200px) {
+    .horizontal-divider {
+        display: none;
+    }
+}
+
+.row {
+    padding: 0px;
+    position: relative;
+}
+
 /*
  * Members
  */

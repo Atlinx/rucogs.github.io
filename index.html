@@ -1,55 +1,17 @@
+---
+uname: home
+---
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <link rel="icon" href="/favicon.ico">
+        {% include head.html %}
 
         <title>RU COGS</title>
-
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.css" rel="stylesheet">
-        <link href="/css/global.css" rel="stylesheet">
-
-        <meta name="description" content="The official site of Rutgers Creation of Games Society (COGS)">
-        <meta name="keywords" content="cogs,usacs,rutgers,games,development,creation,society,club,rucogs">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="/">COGS</a>
-                </div>
-                <div id="navbar" class="navbar-collapse">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li class="active"><a href="/">Home</a></li>
-                        <li><a href="/members.html">Members</a></li>
-                        <li><a href="/projects.html">Projects</a></li>
-                    </ul>
-
-                    <ul id="social" class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="https://github.com/rucogs">
-                                <span class="fa fa-github"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/groups/rutgerscogs/">
-                                <span class="fa fa-facebook"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://rucogs.slack.com/">
-                                <span class="fa fa-slack"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        {% include navbar.html %}
 
         <div class="container">
             <div id="headerWrapper">
@@ -91,42 +53,24 @@
             </a>
         </div>
 
-    <div class="container">
-        <div class="col-lg-4">
-            <h2>About Us</h2>
-            <p>The Rutgers University Creation of Games Society is dedicated to researching, learning, understanding, and teaching the techniques and theories used in video game development in an environment which provides for its members a place expand their knowledge of the concepts and in which they may develop and design video games and theories in the field.</p>
-        </div>
-
-        <div class="col-lg-4">
-            <h2>Join Us</h2>
-            <p>We meet Wednesday night from 7-9PM in The Cave (HLL-292).</p>
-        </div>
-
-        <div class="col-lg-4">
-            <h2>Events</h2>
-            <p>We are constantly striving to provide our members with unique and innovative events that help them explore the videogame industry and the game making process. Check back soon to see some of our past and upcoming events</p>
-        </div>
-    </div>
-
-    <div class="container">
-        <footer class="row footer">
-            <div class="col-xs-12 text-center">
-                <p>This site was made by members of the Creation of Games Society.
-                <a href="https://github.com/RUCOGS/rucogs.github.io/">Fork on Github.</a></p>
+        <div class="container">
+            <div class="col-lg-4">
+                <h2>About Us</h2>
+                <p>The Rutgers University Creation of Games Society is dedicated to researching, learning, understanding, and teaching the techniques and theories used in video game development in an environment which provides for its members a place expand their knowledge of the concepts and in which they may develop and design video games and theories in the field.</p>
             </div>
-        </footer>
-    </div>
 
+            <div class="col-lg-4">
+                <h2>Join Us</h2>
+                <p>We meet Wednesday night from 7-9PM in The Cave (HLL-292).</p>
+            </div>
 
-    <div id="bgGame">
-        <canvas></canvas>
-    </div>
+            <div class="col-lg-4">
+                <h2>Events</h2>
+                <p>We are constantly striving to provide our members with unique and innovative events that help them explore the videogame industry and the game making process. Check back soon to see some of our past and upcoming events</p>
+            </div>
+        </div>
 
-    <!-- Start Scripts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="/js/bootstrap.js"></script>
-        <script src="/js/background.js"></script>
-        <script src="/js/global.js"></script>
-    <!-- End Scripts -->
+        {% include footer.html %}
+
     </body>
 </html>

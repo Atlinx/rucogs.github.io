@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">COGS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li{% if page.uname == "home" %} class="active"{% endif %}><a href="/">Home</a></li>
+                <li{% if page.uname == "members" %} class="active"{% endif %}><a href="/members">Members</a></li>
+                <li{% if page.uname == "projects" %} class="active"{% endif %}><a href="/projects">Projects</a></li>
+            </ul>
+
+            <ul id="social" class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="https://github.com/rucogs">
+                        <span class="fa fa-github"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/rutgerscogs/">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://rucogs.slack.com/">
+                        <span class="fa fa-slack"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+

@@ -43,7 +43,14 @@ body {
 
 @media(max-width:768px) {
     #social {
-        display: none;
+        display: table;
+        width: 100%;
+        text-align: center;
+    }
+
+    #social li {
+        display: table-cell;
+        width: 25%;
     }
 }
 
@@ -128,6 +135,10 @@ h2 {
 .row {
     padding: 0px;
     position: relative;
+}
+
+#joinButton {
+    width: 100%;
 }
 
 /*

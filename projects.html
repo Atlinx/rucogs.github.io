@@ -1,81 +1,123 @@
----
-uname: projects
----
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        {% include head.html %}
-
-        <title>RU COGS</title>
+        <meta charset="UTF-8" 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0, ie=edge"
+            http-equiv="X-UA-Compatible">
+        <link rel="stylesheet" href="res/navbar.css">
+        <link rel="stylesheet" href="res/base.css">
+        <link rel="stylesheet" href="res/projects.css">
+        <link rel="icon" href="res/img/COGSLogoTransparent128.png">
+        <title>RU COGS | Projects</title>
     </head>
 
     <body>
-        {% include navbar.html %}
+        <div id="uberbackground"></div>
+        <div id="background" class="pong-back"></div>
 
-        <div class="container">
-            <div id="headerWrapper">
-                <div class="header">
-                    <h1>Projects</h1>
-                </div>
+        <!--Amazing sticky navbar that will stay on screen at the top when scrolling down-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <ul id="navbar" class="nav">
+            <li class="navbar-entry img-nav-entry left-padding"><a id="home" href="index.html">---</a></li>
+            <li class="navbar-entry"><a href="index.html">Home</a></li>
+            <li class="navbar-entry"><a href="calendar.html">Calendar</a></li>
+            <li class="navbar-entry"><a class="active" href="projects.html">Projects</a></li>
+            <li class="navbar-entry"><a href="pictures.html">Pictures</a></li>
+            <li class="navbar-entry"><a href="resources.html">Resources</a></li>
+            <li class="navbar-entry media-link img-nav-entry right-padding"><a id="email" href="http://eepurl.com/cgDAk5">---</a></li>
+            <li class="navbar-entry media-link img-nav-entry"><a id="discord" href="https://discord.gg/PjZrqyu">---</a></li>
+            <li class="navbar-entry media-link img-nav-entry"><a id="github" href="https://github.com/rucogs">---</a></li>
+            <li id="hamburger" class="navbar-entry right-padding"><a href="javascript:void(0);" id="hamburgera"><i class="fa fa-bars"></i></a></li>
+        </ul>
+
+        <h1>Projects</h1>
+
+        <div class="project right">
+            <div class="image" style="background-image: url(res/img/untitled-gameproj.png);"></div>
+            <div class="info-column">
+                <dl>
+                    <dt>Untitled-Game</dt>
+                    <dd>- In Development</dd>
+                    <dd>- A 2D roguelike platformer devloped explicitly to teach COGS members the basics of game design in Unity.</dd>
+                    <dd>- Made with Unity. </dd>
+                    <dd>- Made by Alexander Xie, Luke Letourneau, Sebastian Munoz, and John Boracci</dd>
+                </dl>
             </div>
         </div>
 
-        <div id="projects" class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <h2>Fighting Game</h2>
-                    <time>In Development</time>
-                    <p>A 2D platformer featuring a number of elemental mages, each with their own special abilities and attacks.</p>
-                    <p>Made with GameMaker Studio.</p>
-                    <p>MADE BY: William He, Brandon, Tamir</p>
-                </div>
-                <div class="col-md-5">
-                    <img src="/images/fightinggame.png">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-7 col-md-push-5">
-                    <h2>Grappleman</h2>
-                    <time>December 2017</time>
-                    <p>A 2D Platformer where the player grapples around the level.</p>
-                    <p>Made with Unity. See <a href="https://github.com/rucogs/grappleman">https://github.com/rucogs/grappleman</a> for more.<p>
-                    <p>MADE BY: Gabriel Hardwick, Eric Roberts, Amer Aliamer</p>
-                </div>
-                <div class="col-md-5 col-md-pull-7">
-                    <img src="/images/grappleman.png"></img>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-7">
-                    <h2>Capture the Flag</h2>
-                    <time>January 2017</time>
-                    <p>Single player first person tanks, where the player fights the AI to steal their flags. Enemies respawn until their flags are captured.</p>
-                    <p>Made with Unity.<p>
-                    <p>MADE BY: William He, Amr, Andrew</p>
-                </div>
-                <div class="col-md-5">
-                    <img src="/images/capturetheflag.png"></img>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-7 col-md-push-5">
-                    <h2>Space Shooter</h2>
-                    <time>May 2017</time>
-                    <p>FPS set in outer space. Destroy aliens with bullets affected by the gravitation of moving planets inside a small solar system.</p>
-                    <p>Made with Unity.</p>
-                    <p>MADE BY: William He</p>
-                </div>
-                <div class="col-md-5 col-md-pull-7">
-                    <img src="/images/spaceshooter.png"></img>
-                </div>
+        <div class="project right">
+            <div class="image" style="background-image: url(res/img/goosebattleroyaleproj.png);"></div>
+            <div class="info-column">
+                <dl>
+                    <dt><a href="https://sorrer.itch.io/goose-battle-royale">Goose Battle Royale</a></dt>
+                    <dd>- April 2019</dd>
+                    <dd>- A battle royal simulator where you play as a goose fighting a field of hundred other geese.</dd>
+                    <dd>- Developed for the Scarlet Game Jam (Hosted by COGs) using Unity. </dd>
+                    <dd>- Made by Alexander Xie, Utkarsh Jha</dd>
+                </dl>
             </div>
         </div>
 
-        {% include footer.html %}
+        <div class="project right">
+            <div class="image" style="background-image: url(res/img/grapplemanproj.png);"></div>
+            <div class="info-column">
+                <dl>
+                    <dt><a href="https://github.com/rucogs/grappleman">Grappleman</a></dt>
+                    <dd>- December 2017</dd>
+                    <dd>- A 2D Platformer where the player grapples around the level.</dd>
+                    <dd>- Made with Unity.</dd>
+                    <dd>- MADE BY: Gabriel Hardwick, Eric Roberts, Amer Aliamer</dd>
+                </dl>
+            </div>
+        </div>
 
+        <div class="project right">
+            <div class="image" style="background-image: url(res/img/fightinggameproj.png);"></div>
+            <div class="info-column">
+                <dl>
+                    <dt>Fighting Game</dt>
+                    <dd>- November 2017</dd>
+                    <dd>- A 2D platformer featuring a number of elemental mages, each with their own special abilities and attacks.</dd>
+                    <dd>- Made with GameMaker Studio.</dd>
+                    <dd>- MADE BY: William He, Brandon, Tamir</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="project right">
+            <div class="image" style="background-image: url(res/img/spaceshooterproj.png);"></div>
+            <div class="info-column">
+                <dl>
+                    <dt>Space Shooter</dt>
+                    <dd>- May 2017</dd>
+                    <dd>- FPS set in outer space. Destroy aliens with bullets affected by the gravitation of moving planets inside a small solar system.</dd>
+                    <dd>- Made with Unity.</dd>
+                    <dd>- MADE BY: William He</dd>
+                </dl>
+            </div>
+        </div>
+        
+        <div class="project right last">
+            <div class="image" style="background-image: url(res/img/capturetheflagproj.png);"></div>
+            <div class="info-column">
+                <dl>
+                    <dt>Capture the Flag</dt>
+                    <dd>- January 2017</dd>
+                    <dd>- Single player first person tanks, where the player fights the AI to steal their flags. Enemies respawn until their flags are captured.</dd>
+                    <dd>- Made with Unity.</dd>
+                    <dd>- MADE BY: William He, Amr, Andrew</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="footer">
+            <hr style="margin-top: 5em; margin-bottom: 1em;">
+            
+            <p style="text-align: center; margin-bottom: 1em;"> This site was made by members of the Creation of Games Society. Find the source on <a href="https://github.com/RUCOGS/rucogs.github.io/">Github</a>.</p>
+        </div>
+
+        <script src="res/responsivenav.js"></script>
+        <script src="res/pongbackground.js"></script>
     </body>
 </html>

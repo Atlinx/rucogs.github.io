@@ -1,42 +1,47 @@
----
-uname: pictures
----
-
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        {% include head.html %}
-
+        <meta charset="UTF-8" 
+        name="viewport" 
+        content="width=device-width, initial-scale=1.0, ie=edge"
+        http-equiv="X-UA-Compatible">
+        <link rel="stylesheet" href="res/navbar.css">
+        <link rel="stylesheet" href="res/base.css">
+        <link rel="stylesheet" href="res/pictures.css">
+        <link rel="icon" href="res/img/COGSLogoTransparent128.png">
         <title>RU COGS | Pictures</title>
     </head>
 
     <body>
-        {% include navbar.html %}
+        <div id="uberbackground"></div>
+        <div id="background" class="pong-back"></div>
 
-        <div class="container">
-            <div id="headerWrapper">
-                <div class="header">
-                    <h1>Photo Gallery</h1>
-                </div>
-            </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <ul id="navbar" class="nav">
+            <li class="navbar-entry img-nav-entry left-padding"><a id="home" href="index.html">---</a></li>
+            <li class="navbar-entry"><a href="index.html">Home</a></li>
+            <li class="navbar-entry"><a href="calendar.html">Calendar</a></li>
+            <li class="navbar-entry"><a href="projects.html">Projects</a></li>
+            <li class="navbar-entry"><a class="active" href="pictures.html">Pictures</a></li>
+            <li class="navbar-entry"><a href="resources.html">Resources</a></li>
+            <li class="navbar-entry media-link img-nav-entry right-padding"><a id="email" href="http://eepurl.com/cgDAk5">---</a></li>
+            <li class="navbar-entry media-link img-nav-entry"><a id="discord" href="https://discord.gg/PjZrqyu">---</a></li>
+            <li class="navbar-entry media-link img-nav-entry"><a id="github" href="https://github.com/rucogs">---</a></li>
+            <li id="hamburger" class="navbar-entry right-padding"><a href="javascript:void(0);" id="hamburgera"><i class="fa fa-bars"></i></a></li>
+        </ul>
+
+        <h1>Photos</h1>
+
+        <!-- This gets auto-populated by the javascript script -->
+        <div id="gallery"></div>
+
+        <div id="footer">
+            <hr style="margin-top: 5em; margin-bottom: 1em;">
+            
+            <p style="text-align: center; margin-bottom: 1em;"> This site was made by members of the Creation of Games Society. Find the source on <a href="https://github.com/RUCOGS/rucogs.github.io/">Github</a>.</p>
         </div>
 
-        <div class="container">
-            <div class="photo-gallery">
-                <a href="https://s3.amazonaws.com/rucogs-assets/gallery/original001.jpg"><img src="https://s3.amazonaws.com/rucogs-assets/gallery/small001.png"/></a>
-                <a href="https://s3.amazonaws.com/rucogs-assets/gallery/original002.jpg"><img src="https://s3.amazonaws.com/rucogs-assets/gallery/small002.png"/></a>
-                <a href="https://s3.amazonaws.com/rucogs-assets/gallery/original003.jpg"><img src="https://s3.amazonaws.com/rucogs-assets/gallery/small003.png"/></a>
-                <a href="https://s3.amazonaws.com/rucogs-assets/gallery/original004.jpg"><img src="https://s3.amazonaws.com/rucogs-assets/gallery/small004.png"/></a>
-                <a href="https://s3.amazonaws.com/rucogs-assets/gallery/original005.jpg"><img src="https://s3.amazonaws.com/rucogs-assets/gallery/small005.png"/></a>
-                <a href="https://s3.amazonaws.com/rucogs-assets/gallery/original006.jpg"><img src="https://s3.amazonaws.com/rucogs-assets/gallery/small006.png"/></a>
-                <a href="https://s3.amazonaws.com/rucogs-assets/gallery/original007.jpg"><img src="https://s3.amazonaws.com/rucogs-assets/gallery/small007.png"/></a>
-                <a href="https://s3.amazonaws.com/rucogs-assets/gallery/original008.jpg"><img src="https://s3.amazonaws.com/rucogs-assets/gallery/small008.png"/></a>
-                <a href="https://s3.amazonaws.com/rucogs-assets/gallery/original009.jpg"><img src="https://s3.amazonaws.com/rucogs-assets/gallery/small009.png"/></a>
-                <a href="https://s3.amazonaws.com/rucogs-assets/gallery/original010.jpg"><img src="https://s3.amazonaws.com/rucogs-assets/gallery/small010.png"/></a>
-                <a href="https://s3.amazonaws.com/rucogs-assets/gallery/original011.jpg"><img src="https://s3.amazonaws.com/rucogs-assets/gallery/small011.png"/></a>
-            </div>
-        </div>
-
-        {% include footer.html %}
+        <script src="res/responsivenav.js"></script>
+        <script src="res/generateGallery.js"></script>
+        <script src="res/pongbackground.js"></script>
     </body>
 </html>

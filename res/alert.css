@@ -1,0 +1,12 @@
+.alert-info {
+    background-color: skyblue;
+}
+
+.alert-severe {
+    background-color: tomato;
+}
+
+.alert-content {
+    padding: 0.5em 3em;
+    height: 5em;
+}

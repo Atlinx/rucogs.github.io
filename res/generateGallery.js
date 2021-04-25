@@ -9,7 +9,7 @@ function generateGallery() {
         newPhoto.setAttribute("class", "photo");
         var imgLink = document.createElement("a");
         imgLink.setAttribute("target", "_blank");
-        imgLink.setAttribute("href", i + ".png");
+        imgLink.setAttribute("href", "res/img/gallery/" + i + ".png");
         var img = document.createElement("img");
         img.setAttribute("src", "res/img/gallery/" + i + ".png");
         imgLink.appendChild(img);

@@ -109,12 +109,12 @@ dd {
 
 #title-div {
     display: flex;
-    height: 20vh;
+    height: 30vh;
     align-items: center;
     justify-content: center;
     background-image: url(img/cover-image-cog.jpg);
-    background-size: cover;
-    background-position-y: center;
+    background-size:cover;
+    background-position-y: 10%;
 }
 
 #faq {

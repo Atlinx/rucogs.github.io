@@ -168,7 +168,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1540px) {
     #navbar.responsive {
         display: flex;
         flex-wrap: wrap;

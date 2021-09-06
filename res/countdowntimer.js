@@ -1,4 +1,4 @@
-var finalDate = new Date("Nov 20, 2021 0:00:00").getTime();
+var finalDate = new Date("Nov 9, 2021 19:00:00").getTime();
 
 var y = () => {
     var now = new Date().getTime();

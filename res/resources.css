@@ -35,7 +35,7 @@ a {
     color: #0F1216;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (orientation: portrait) {
     #col1 {
         margin-left: 10%;
         width: 80%;

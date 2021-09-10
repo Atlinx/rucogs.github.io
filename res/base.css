@@ -11,8 +11,10 @@ body {
 }
 
 .button {
-    margin-left: 2em;
-    margin-right: 2em;
+	margin-left: 2em;
+	margin-right: 2em;
+    margin-top: 0.5em;
+	margin-bottom: 0.5em;
     padding: 1em;
     text-decoration: none;
     color: white;
@@ -34,6 +36,14 @@ body {
 }
 .round-corners:hover, .round-corners:focus, .round-corners:active {
     border-radius: 1em;
+}
+
+.button {
+	transition: 0.3s;
+}
+
+.button:hover {
+	background-color: rgb(207, 174, 174);
 }
 
 #footer {
@@ -106,7 +116,13 @@ p {
     text-indent: 1em;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (orientation: landscape) {
+	.mobile {
+		display: none;
+	}
+}
+
+@media only screen and (orientation: portrait) {
     h1 {
         text-align: center;
         color: #000000;
@@ -132,4 +148,8 @@ p {
         color: #0F1216;
         font-size: .75em;
     }
+
+	.desktop {
+		display: none;
+	}
 }

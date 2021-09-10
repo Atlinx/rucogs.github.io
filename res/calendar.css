@@ -9,9 +9,3 @@ html, body {
 h1 {
     padding: .5em;
 }
-
-@media only screen and (max-width: 1000px) {
-    div {
-        width: 1000px;
-    }
-}

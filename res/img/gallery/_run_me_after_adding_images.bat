@@ -1,12 +1,17 @@
-@REM NOTE: that this may jumble up the order of the images -- even if no new images
-@REM have been added. This is due to the batch file's for loop returning the files in
-@REM an unsorted manner. 
+@REM NOTE: YOU MUST HAVE IMAGEMAGICK INSTALLED AND ADDED TO YOUR "PATH" ENVIRONMENT VARIABLE
+@REM 	   IN ORDER FOR PREVIEWS TO BE GENERATED
 
+@REM NOTE: This may jumble up the order of the images -- even if no new images
+@REM 	   have been added. This is due to the batch file's for loop returning the files in
+@REM 	   an unsorted manner.
 
 @echo off
 
 @REM Delayed expansion lets variables be evaluated once they are run.
 @REM To get a delayed expanded varaible, you have to use !variable_name!
+
+rd /S /Q previews
+mkdir previews
 
 setlocal enableDelayedExpansion
 set /A i=0
@@ -39,3 +44,5 @@ for %%F in (OLD_*.png) do (
   set "name=%%F"
   ren "!name!" "!i!.png"
 )
+
+magick.exe mogrify -resize x200 -path "previews" *.png

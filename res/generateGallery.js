@@ -1,4 +1,4 @@
-const numImages = 10;
+const numImages = 30;
 
 generateGallery();
 
@@ -12,6 +12,7 @@ function generateGallery() {
         imgLink.setAttribute("href", "res/img/gallery/" + i + ".png");
         var img = document.createElement("img");
         img.setAttribute("src", "res/img/gallery/" + i + ".png");
+		img.setAttribute("height", 200);
         imgLink.appendChild(img);
         newPhoto.appendChild(imgLink);
         gallery.appendChild(newPhoto);

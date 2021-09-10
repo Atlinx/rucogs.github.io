@@ -6,7 +6,7 @@ hamburger.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-    if(window.innerWidth >= 1540) {
+    if(screen.orientation === "landscape-primary" || screen.orientation === "landscape-secondary") {
         navbar.className = "nav";
     }
 });

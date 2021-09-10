@@ -11,7 +11,7 @@
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
     margin-top: 5em;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -20,12 +20,26 @@
     box-shadow: 0px 0px 20px 0px #3b3b3b 
 }
 
+/* Adaptive width for mobile devices. */
+@media only screen and (orientation: portrait) {
+	.sgjcontentbackground {
+		width: 90%;
+	}
+}
+
 .sgjcontent {
     width: 60%;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
     /*box-shadow: 0px 20px 10px -20px #3b3b3b, 0px -20px 10px -20px #3b3b3b*/
+}
+
+/* Adaptive width for mobile devices. */
+@media only screen and (orientation: portrait) {
+	.sgjcontent {
+		width: 90%;
+	}
 }
 
 #sgjfooter {
@@ -38,7 +52,7 @@
     width: 100%;
     font-family: 'Chivo', sans-serif;
     font-weight: 300;
-    font-size: 3.5vw;
+    font-size: calc(1.5em + 1.5vw);
     text-align: center;
 }
 

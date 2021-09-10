@@ -31,7 +31,7 @@ dd {
     right:30%;
 
     border-right: 2px solid;
-    border-image: radial-gradient(#f5f5f5, #0B0C10, #f5f5f5) 1;
+    border-image: radial-gradient(#f5f5f500, #0B0C10, #f5f5f500) 1;
 }
 #container1 {
     float:left;
@@ -40,7 +40,7 @@ dd {
     right:40%;
 
     border-right: 2px solid;
-    border-image: radial-gradient(#f5f5f5, #0B0C10, #f5f5f5) 1;
+    border-image: radial-gradient(#f5f5f500, #0B0C10, #f5f5f500) 1;
 }
 
 #column1 {

@@ -6,7 +6,7 @@ hamburger.addEventListener("click", () => {
 });
 
 window.addEventListener("resize", () => {
-    if(window.innerWidth >= 1200) {
+    if(window.innerWidth >= 1540) {
         navbar.className = "nav";
     }
 });

@@ -1,4 +1,4 @@
-const numImages = 30;
+const numImages = 17;
 
 generateGallery();
 
